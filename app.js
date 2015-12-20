@@ -5,12 +5,10 @@ var repl = require("repl"),
   table = require('better-console').table;
 
 var url = readlineSync.question('Your Salesforce login url (ex: https://ap.salesforce.com): ');
-
 var username = readlineSync.question('Your username (we won\'t keep): ');
 var passwd = readlineSync.question('Your password (we won\'t keep): ', {
   hideEchoBack: true
 });
-
 
 var conn = new jsforce.Connection({
   loginUrl : url
@@ -26,21 +24,14 @@ conn.login(username, passwd, function(err, userInfo) {
     prompt: "soql> ",
     ignoreUndefined: true,
     eval: function(cmd, context, filename, callback) {
-
-
       var records = [];
       conn.query(cmd, function(err, result) {
         if (err) { return console.error(err); }
-
         var filteredRecords = _.map(result.records, function(value, key) {
           delete value.attributes;
           return value;
         });
-
-        console.log(filteredRecords);
-
         table(filteredRecords);
-
         callback(); 
 
       });

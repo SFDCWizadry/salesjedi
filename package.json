@@ -1,0 +1,25 @@
+{
+  "name": "salesjedi",
+  "version": "0.0.1",
+  "description": "Your One Stop Salesforce CLI Utility",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SFDCWizadry/salesjedi"
+  },
+  "keywords": [
+    "salesforce"
+  ],
+  "author": "Alfian Busyro",
+  "license": "MIT",
+  "dependencies": {
+    "better-console": "^0.2.4",
+    "commander": "^2.9.0",
+    "jsforce": "^1.5.0",
+    "readline-sync": "^1.2.21",
+    "underscore": "^1.8.3"
+  }
+}

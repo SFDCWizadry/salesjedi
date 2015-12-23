@@ -1,3 +1,13 @@
+#!/usr/bin/env node
+
+/**
+ * salesjedi
+ * https://github.com/SFDCWizadry/salesjedi
+ *
+ * Copyright (c) 2015 Alfian Busryo
+ * Licensed under the MIT license.
+ */
+
 var repl = require("repl"),
   _ = require('underscore'),
   jsforce = require('jsforce'),

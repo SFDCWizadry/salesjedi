@@ -1,8 +1,9 @@
 {
   "name": "salesjedi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Your One Stop Salesforce CLI Utility",
   "main": "app.js",
+  "bin": "./app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +14,7 @@
   "keywords": [
     "salesforce"
   ],
-  "author": "Alfian Busyro",
+  "author": "Alfian Busyro <arufian703@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "better-console": "^0.2.4",

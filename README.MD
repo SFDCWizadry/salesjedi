@@ -3,8 +3,6 @@ Salesjedi.
 
 Your One Stop Salesforce CLI Utility.
 
-Eventhough this project is still under development. you can enjoy the soql feature using current code.
-
 ## Features
 
 - SQL-ish SOQL query console (with table display)
@@ -12,13 +10,9 @@ Eventhough this project is still under development. you can enjoy the soql featu
 
 ## Usage
 
-- Clone this repo
-- Install [NodeJS](https://nodejs.org)
-- run this command on your console:
-
 ```sh
-$ node app.js
+$ salesjedi
 ```
 
 - Login to your salesforce account
-- When your console prompt to `soql>` you can start typing SOLQ query and run it in your console
+- When your console prompt to `soql>` you can start typing your SOQL query and run it into console
